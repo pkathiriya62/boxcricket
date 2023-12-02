@@ -40,7 +40,7 @@ class _Screen2State extends State<Screen2> {
                           'assets/images/undraw_home_run_acyh.png'))),
             ),
           )
-        ],    
+        ],
       ),
     );
   }
