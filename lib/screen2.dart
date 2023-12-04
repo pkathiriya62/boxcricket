@@ -23,8 +23,10 @@ class _Screen2State extends State<Screen2> {
                   height: 23,
                   width: 34,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/SKIP.png'))),
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/SKIP.png'),
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -35,10 +37,20 @@ class _Screen2State extends State<Screen2> {
               height: 335,
               width: 291,
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                          'assets/images/undraw_home_run_acyh.png'))),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/undraw_home_run_acyh.png'),
+                ),
+              ),
             ),
+          ),
+          Row(
+            children: [
+              Container(
+                height: 168,
+                width: 182,
+                child: Text('Getting Started With Cricket Box',style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+              )
+            ],
           )
         ],
       ),

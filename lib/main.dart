@@ -1,4 +1,5 @@
-import 'package:boxcricket2/screen2.dart';
+import 'package:boxcricket2/examscreen.dart';
+//import 'package:boxcricket2/screen2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Screen2(),  
+      home: const Examscreen(),  
     );
   }
 }
