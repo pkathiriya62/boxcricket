@@ -1,5 +1,5 @@
 //import 'package:boxcricket2/examscreen.dart';
-import 'package:boxcricket2/screen2.dart';
+//import 'package:boxcricket2/screen2.dart';
 import 'package:boxcricket2/screen3.dart';
 //import 'package:boxcricket2/screen2.dart';
 import 'package:flutter/material.dart';
