@@ -31,13 +31,16 @@ class _Screen4State extends State<Screen4> {
                     width: 47,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      image: DecorationImage(image: AssetImage('assets/images/Mask group (1).png'),),
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/Mask group (1).png'),
+                      ),
                     ),
                   ),
                   const SizedBox(
                     width: 10,
                   ),
-                  const Text('Hello, Vaibhav !',
+                  const Text(
+                    'Hello, Vaibhav !',
                     style: TextStyle(
                       fontFamily: 'assets/font/Poppins-Regular.ttf',
                       fontWeight: FontWeight.w700,
@@ -48,7 +51,6 @@ class _Screen4State extends State<Screen4> {
                   const Icon(Icons.notifications),
                 ],
               ),
-
             ),
           ),
           const SizedBox(
@@ -64,9 +66,7 @@ class _Screen4State extends State<Screen4> {
                     prefixIconColor: Colors.black,
                     suffixIconColor: Colors.black,
                     suffixIcon: const Icon(Icons.keyboard_voice_outlined),
-
                     border: OutlineInputBorder(
-
                       borderRadius: BorderRadius.circular(10),
                     ),
                     hintText: 'Search',
@@ -77,7 +77,6 @@ class _Screen4State extends State<Screen4> {
                       color: Colors.black,
                     ),
                   ),
-
                 ),
               ],
             ),
@@ -91,7 +90,8 @@ class _Screen4State extends State<Screen4> {
               children: [
                 Row(
                   children: [
-                    Text('Nearby Location',
+                    Text(
+                      'Nearby Location',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontWeight: FontWeight.w700,
@@ -99,7 +99,8 @@ class _Screen4State extends State<Screen4> {
                       ),
                     ),
                     Spacer(),
-                    Text('See All',
+                    Text(
+                      'See All',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontSize: 15,
@@ -116,86 +117,88 @@ class _Screen4State extends State<Screen4> {
             height: 15,
           ),
           Container(
-              width: 335,
+            width: 335,
             height: 211,
             decoration: BoxDecoration(
-
-              borderRadius: const BorderRadius.all(Radius.circular(10),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(10),
               ),
-                    border: Border.all(color: Colors.black),
-
+              border: Border.all(color: Colors.black),
             ),
-            child:  Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-
               children: [
-                      Image(image: AssetImage('assets/images/Rectangle 412.png')),
+                Image(image: AssetImage('assets/images/Rectangle 412.png')),
                 Row(
                   children: [
-                   Container(
-                     child: const Row(
-                       children: [
-                         Icon(Icons.star,
-                           color: Color(0xff20AC2A),
-                           size: 12,
-                         ),
-                         Icon(Icons.star,
-                           color: Color(0xff20AC2A),
-                           size: 12,
-                         ),
-                         Icon(Icons.star,
-                           color: Color(0xff20AC2A),
-                           size: 12,
-                         ),
-                         Icon(Icons.star,
-                           color: Color(0xff20AC2A),
-                           size: 12,
-                         ),
-                         Icon(Icons.star,
-                           color: Color(0xffB5CFE1),
-                           size: 12,
-                         ),
-                         Text('Good',
-                           style: TextStyle(
-                             fontFamily: 'assets/font/Poppins-Regular.ttf',
-                             fontWeight: FontWeight.w700,
-                             fontSize: 10,
-                             color: Colors.black,
-                           ),
-                         ),
-                         Text('62,778 Rating',
-                           style: TextStyle(
-                               fontFamily: 'assets/font/Poppins-Regular.ttf',
-                               fontWeight: FontWeight.w700,
-                               fontSize: 10,
-                               color: Color(0xffB5CFE1)
-                           ),
-                         ),
-                       ],
-                     ),
-                   ),
+                    Container(
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Color(0xff20AC2A),
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Color(0xff20AC2A),
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Color(0xff20AC2A),
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Color(0xff20AC2A),
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Color(0xffB5CFE1),
+                            size: 12,
+                          ),
+                          Text(
+                            'Good',
+                            style: TextStyle(
+                              fontFamily: 'assets/font/Poppins-Regular.ttf',
+                              fontWeight: FontWeight.w700,
+                              fontSize: 10,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            '62,778 Rating',
+                            style: TextStyle(
+                                fontFamily: 'assets/font/Poppins-Regular.ttf',
+                                fontWeight: FontWeight.w700,
+                                fontSize: 10,
+                                color: Color(0xffB5CFE1)),
+                          ),
+                        ],
+                      ),
+                    ),
                     const SizedBox(
                       height: 8,
                     ),
                     const Spacer(),
                     Padding(
-                      padding: const EdgeInsets.only(right: 10,top: 9),
+                      padding: const EdgeInsets.only(right: 10, top: 9),
                       child: Container(
                         height: 24,
                         width: 63,
                         decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(6)),
-                            color: Color(0xff78A408)
-                        ),
+                            color: Color(0xff78A408)),
                         child: Align(
                           alignment: Alignment.center,
                           child: Text(
                             'Rs.15000',
                             style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 10,
-                              color: Colors.white
-                            ),
+                                fontWeight: FontWeight.w600,
+                                fontSize: 10,
+                                color: Colors.white),
                           ),
                         ),
                       ),
@@ -204,10 +207,12 @@ class _Screen4State extends State<Screen4> {
                 ),
                 const Row(
                   children: [
-                    Icon(Icons.location_on_outlined,
+                    Icon(
+                      Icons.location_on_outlined,
                       color: Color(0xff78A408),
                     ),
-                    Text('Capital Cricket Club , Mota Varachha',
+                    Text(
+                      'Capital Cricket Club , Mota Varachha',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontSize: 12,
@@ -228,7 +233,8 @@ class _Screen4State extends State<Screen4> {
               children: [
                 Row(
                   children: [
-                    Text('Top Place',
+                    Text(
+                      'Top Place',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontWeight: FontWeight.w700,
@@ -236,7 +242,8 @@ class _Screen4State extends State<Screen4> {
                       ),
                     ),
                     Spacer(),
-                    Text('See All',
+                    Text(
+                      'See All',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontSize: 15,
@@ -256,39 +263,45 @@ class _Screen4State extends State<Screen4> {
             width: 335,
             height: 211,
             decoration: BoxDecoration(
-
-                borderRadius: const BorderRadius.all(Radius.circular(10),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10),
                 ),
-                border: Border.all(color: Colors.black)
-            ),
-            child:  Column(
+                border: Border.all(color: Colors.black)),
+            child: Column(
               children: [
-                const Image(image: AssetImage('assets/images/Rectangle 412 (1).png')),
+                const Image(
+                    image: AssetImage('assets/images/Rectangle 412 (1).png')),
                 Row(
                   children: [
                     const Row(
                       children: [
-                        Icon(Icons.star,
+                        Icon(
+                          Icons.star,
                           color: Color(0xff20AC2A),
                           size: 12,
                         ),
-                        Icon(Icons.star,
+                        Icon(
+                          Icons.star,
                           color: Color(0xff20AC2A),
                           size: 12,
                         ),
-                        Icon(Icons.star,
+                        Icon(
+                          Icons.star,
                           color: Color(0xff20AC2A),
                           size: 12,
                         ),
-                        Icon(Icons.star,
+                        Icon(
+                          Icons.star,
                           color: Color(0xff20AC2A),
                           size: 12,
                         ),
-                        Icon(Icons.star,
+                        Icon(
+                          Icons.star,
                           color: Color(0xffB5CFE1),
                           size: 12,
                         ),
-                        Text('Good',
+                        Text(
+                          'Good',
                           style: TextStyle(
                             fontFamily: 'assets/font/Poppins-Regular.ttf',
                             fontWeight: FontWeight.w700,
@@ -296,12 +309,13 @@ class _Screen4State extends State<Screen4> {
                             color: Colors.black,
                           ),
                         ),
-                        Text('62,778 Rating',
+                        Text(
+                          '62,778 Rating',
                           style: TextStyle(
-                              fontFamily: 'assets/font/Poppins-Regular.ttf',
-                              fontWeight: FontWeight.w700,
-                              fontSize: 10,
-                              color: Color(0xffB5CFE1),
+                            fontFamily: 'assets/font/Poppins-Regular.ttf',
+                            fontWeight: FontWeight.w700,
+                            fontSize: 10,
+                            color: Color(0xffB5CFE1),
                           ),
                         ),
                       ],
@@ -311,15 +325,13 @@ class _Screen4State extends State<Screen4> {
                     ),
                     Spacer(),
                     Padding(
-                      padding: const EdgeInsets.only(right: 10,top: 8),
+                      padding: const EdgeInsets.only(right: 10, top: 8),
                       child: Container(
                         height: 24,
                         width: 63,
                         decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(6)),
-                            color: Color(0xff78A408)
-                                
-                        ),
+                            borderRadius: BorderRadius.all(Radius.circular(6)),
+                            color: Color(0xff78A408)),
                         child: Align(
                           alignment: Alignment.center,
                           child: Text(
@@ -327,22 +339,21 @@ class _Screen4State extends State<Screen4> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 10,
-                                color: Colors.white
-                            ),
+                                color: Colors.white),
                           ),
                         ),
                       ),
-                      
                     ),
-                    
                   ],
                 ),
                 const Row(
                   children: [
-                    Icon(Icons.location_on_outlined,
+                    Icon(
+                      Icons.location_on_outlined,
                       color: Color(0xff78A408),
                     ),
-                    Text('Power Play Truf , Dumas Road',
+                    Text(
+                      'Power Play Truf , Dumas Road',
                       style: TextStyle(
                         fontFamily: 'assets/font/Poppins-Regular.ttf',
                         fontSize: 12,
@@ -357,54 +368,55 @@ class _Screen4State extends State<Screen4> {
           SizedBox(
             height: 70,
           ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 50,
-                width: double.infinity,
-                decoration: BoxDecoration(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Container(
+              height: 50,
+              width: double.infinity,
+              decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                   color: Colors.white,
-                  boxShadow: [BoxShadow(
-                    blurRadius: 10,
-                    offset: Offset(4,4 ),
-                    color: Colors.black26,
-                  )],
-                  border: Border.all(color: Colors.black26)
-                ),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: 37,
-                        width: 37,
-                        decoration: BoxDecoration(
-                          color: Color(0xff78A408),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Icon(Icons.home_outlined,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    Expanded
-                      (
-                      child: Container(
-                        child: Icon(Icons.event_outlined),
-                      ),
-                    ),
-                    Expanded
-                      (child: Container(
-                      child: Icon(Icons.sports_cricket_outlined),
-                    )),
-                    Expanded
-                      (child: Container(
-                      child: Icon(Icons.person_outline),
-                    )),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 10,
+                      offset: Offset(4, 4),
+                      color: Colors.black26,
+                    )
                   ],
-                ),
+                  border: Border.all(color: Colors.black26)),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 37,
+                      width: 37,
+                      decoration: BoxDecoration(
+                        color: Color(0xff78A408),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.home_outlined,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Icon(Icons.event_outlined),
+                    ),
+                  ),
+                  Expanded(
+                      child: Container(
+                    child: Icon(Icons.sports_cricket_outlined),
+                  )),
+                  Expanded(
+                      child: Container(
+                    child: Icon(Icons.person_outline),
+                  )),
+                ],
               ),
-            )
+            ),
+          )
         ],
       ),
     );

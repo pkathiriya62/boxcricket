@@ -26,9 +26,10 @@ class _Screen5State extends State<Screen5> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
-          
           children: [
-            SizedBox(height: 15,),
+            SizedBox(
+              height: 15,
+            ),
             TextField(
               decoration: InputDecoration(
                 prefixIcon: const Icon(Icons.search),

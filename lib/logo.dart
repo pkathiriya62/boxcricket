@@ -16,9 +16,11 @@ class _LogoscreenState extends State<Logoscreen> {
           height: 272,
           width: 272,
           decoration: BoxDecoration(
-            color:Color(0xff78A408),
+            color: Color(0xff78A408),
             borderRadius: BorderRadius.circular(400),
-            image: DecorationImage(image: AssetImage('assets/images/Vector.png'),),
+            image: DecorationImage(
+              image: AssetImage('assets/images/Vector.png'),
+            ),
           ),
         ),
       ),

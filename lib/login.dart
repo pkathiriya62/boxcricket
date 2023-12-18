@@ -7,18 +7,13 @@ class Screen3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Stack
-      (
-        children: 
-        [
-          Column
-          (
+      body: Stack(
+        children: [
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: 
-            [
-              Row
-              (
+            children: [
+              Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Image.asset(
@@ -27,74 +22,55 @@ class Screen3 extends StatelessWidget {
                   ),
                 ],
               ),
-              Image.asset
-              (
+              Image.asset(
                 'assets/images/Ellipse 28.png',
                 scale: 2,
               ),
             ],
           ),
-          Padding
-          (
+          Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Column
-            (
-              children: 
-              [
-                SizedBox
-                (
+            child: Column(
+              children: [
+                SizedBox(
                   height: 50,
                 ),
-                Row
-                (
-                  children:
-                   [
-                    SizedBox
-                    (
+                Row(
+                  children: [
+                    SizedBox(
                       width: 20,
                     ),
-                    Icon
-                    (
+                    Icon(
                       Icons.arrow_back,
                       size: 32,
                     ),
-                    SizedBox
-                    (
+                    SizedBox(
                       width: 20,
                     ),
-                    Text
-                    (
+                    Text(
                       'LOGIN TO ACCOUNT',
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                     ),
                   ],
                 ),
-                SizedBox
-                (
+                SizedBox(
                   height: 40,
                 ),
-                Column
-                (
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: 
-                  [
-                    Text
-                    (
+                  children: [
+                    Text(
                       'Your Full Name',
                       style:
                           TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox
-                    (
+                    SizedBox(
                       height: 10,
                     ),
-                    TextField
-                    (
-                      decoration: InputDecoration
-                      (
-                        border: OutlineInputBorder
-                        (
+                    TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                         hintText: 'Enter Your Full Name',
@@ -103,26 +79,20 @@ class Screen3 extends StatelessWidget {
                         // ),
                       ),
                     ),
-                    SizedBox
-                    (
+                    SizedBox(
                       height: 20,
                     ),
-                    Text
-                    (
+                    Text(
                       'Mobile Number',
                       style:
                           TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox
-                    (
+                    SizedBox(
                       height: 10,
                     ),
-                    TextField
-                    (
-                      decoration: InputDecoration
-                      (
-                        border: OutlineInputBorder
-                        (
+                    TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                         hintText: 'Enter Your Mobile Number',
@@ -133,19 +103,14 @@ class Screen3 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox
-                (
+                SizedBox(
                   height: 20,
                 ),
-                Container
-                (
-                  child: Center
-                  (
-                    child: Text
-                    (
+                Container(
+                  child: Center(
+                    child: Text(
                       'Sign In',
-                      style: TextStyle
-                      (
+                      style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 25,
                         color: Colors.white,
@@ -154,8 +119,7 @@ class Screen3 extends StatelessWidget {
                   ),
                   height: 50,
                   width: double.infinity,
-                  decoration: BoxDecoration
-                  (
+                  decoration: BoxDecoration(
                     color: Color(0xff78A408),
                     borderRadius: BorderRadius.circular(10),
                   ),
