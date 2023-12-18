@@ -191,7 +191,7 @@ class _Screen4State extends State<Screen4> {
                         decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(6)),
                             color: Color(0xff78A408)),
-                        child: Align(
+                        child: const Align(
                           alignment: Alignment.center,
                           child: Text(
                             'Rs.15000',
@@ -332,7 +332,7 @@ class _Screen4State extends State<Screen4> {
                         decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(6)),
                             color: Color(0xff78A408)),
-                        child: Align(
+                        child: const Align(
                           alignment: Alignment.center,
                           child: Text(
                             'Rs.12000',
@@ -365,7 +365,7 @@ class _Screen4State extends State<Screen4> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 70,
           ),
           Padding(
@@ -376,7 +376,7 @@ class _Screen4State extends State<Screen4> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                   color: Colors.white,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 10,
                       offset: Offset(4, 4),
@@ -390,11 +390,11 @@ class _Screen4State extends State<Screen4> {
                     child: Container(
                       height: 37,
                       width: 37,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xff78A408),
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.home_outlined,
                         color: Colors.white,
                       ),

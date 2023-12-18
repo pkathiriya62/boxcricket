@@ -23,7 +23,7 @@ class Screen7 extends StatelessWidget {
             ),
             Container(
               child: Icon(
-                Icons.check_circle_outline_sharp,
+                Icons.check_circle_outline_rounded,
                 size: 220,
                 color: Color(0xff78A408),
               ),
@@ -46,10 +46,12 @@ class Screen7 extends StatelessWidget {
                 left: 50,
                 right: 50,
               ),
-              child: Text(
-                'Thank You For Your Payment. We Will be in contact with more deatils shortly.',
-                style: TextStyle(
-                  fontSize: 17,
+              child: Center(
+                child: Text(
+                  'Thank You For Your Payment. We Will be in contact with more details shortly.',
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
                 ),
               ),
             ),
