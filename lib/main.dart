@@ -1,6 +1,4 @@
-// import 'package:boxcricket2/details.dart';
-// import 'package:boxcricket2/payment.dart';
-import 'package:boxcricket2/paysuccess.dart';
+import 'package:boxcricket2/payment.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Screen7(),  
+      home: const Screen6(),  
     );
   }
 }

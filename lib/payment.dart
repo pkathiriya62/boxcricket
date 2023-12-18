@@ -8,8 +8,8 @@ class Screen6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Padding(
-          padding: const EdgeInsets.only(
+        leading: const Padding(
+          padding: EdgeInsets.only(
             left: 20,
           ),
           child: Icon(
@@ -17,8 +17,8 @@ class Screen6 extends StatelessWidget {
             size: 30,
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 80),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 80),
           child: Text(
             'PAYMENT',
             style: TextStyle(
@@ -33,14 +33,14 @@ class Screen6 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              child: Center(
+              child: const Center(
                 child: Image(
                   image: AssetImage('assets/images/pngwing 7.png'),
                   width: 300,
                 ),
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
@@ -57,17 +57,17 @@ class Screen6 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'Add A New Payment Method',
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -132,20 +132,20 @@ class Screen6 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 9,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Card Number',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
                 Container(
@@ -158,7 +158,7 @@ class Screen6 extends StatelessWidget {
                         hintText: 'Enter Your Card Number'),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
                 Text(
@@ -168,7 +168,7 @@ class Screen6 extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
                 Container(
@@ -181,7 +181,7 @@ class Screen6 extends StatelessWidget {
                         hintText: 'Enter Your Card Number'),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
                 Row(
@@ -196,7 +196,7 @@ class Screen6 extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 9,
                         ),
                         Container(
@@ -212,7 +212,7 @@ class Screen6 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 21,
                     ),
                     Column(
@@ -225,7 +225,7 @@ class Screen6 extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 9,
                         ),
                         Container(
@@ -243,10 +243,10 @@ class Screen6 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
@@ -265,7 +265,7 @@ class Screen6 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 Column(
@@ -279,7 +279,7 @@ class Screen6 extends StatelessWidget {
                       ),
                       child: TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'PAY NOW',
                           style: TextStyle(
                             color: Colors.white,
