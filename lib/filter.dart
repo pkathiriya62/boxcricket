@@ -11,7 +11,6 @@ class Screen10 extends StatefulWidget {
 class _Screen10State extends State<Screen10> {
   List tags = ['Near You', 'Local Match', 'National Level', 'Practice Session'];
 
-  @override
   double newvalue = 0.5;
 
   Widget build(BuildContext context) {
