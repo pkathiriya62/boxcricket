@@ -1,7 +1,4 @@
-// import 'package:boxcricket2/conformation.dart';
 import 'package:boxcricket2/4days.dart';
-import 'package:boxcricket2/details.dart';
-// import 'package:boxcricket2/filter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
