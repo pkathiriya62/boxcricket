@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class  DetailsScreen extends StatefulWidget {
-  const DetailsScreen ({super.key});
+class DetailsScreen extends StatefulWidget {
+  const DetailsScreen({super.key});
 
   @override
   State<DetailsScreen> createState() => _Screen6State();
 }
 
 class _Screen6State extends State<DetailsScreen> {
-  List images=[
+  List images = [
     'assets/images/Vector.png',
     'assets/images/Vector (1).png',
     'assets/images/Vector (2).png',
     'assets/images/Vector (3).png',
-    
   ];
   @override
   Widget build(BuildContext context) {
@@ -103,17 +102,15 @@ class _Screen6State extends State<DetailsScreen> {
                         height: 62,
                         width: 80,
                         decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           image: DecorationImage(
-                            image: AssetImage(
-                                images[index]),
-                                fit: BoxFit.fill,
+                            image: AssetImage(images[index]),
+                            fit: BoxFit.fill,
                           ),
                         ),
                       ),
                     );
                   },
-                  
                 ),
               ),
               Text(
@@ -318,9 +315,9 @@ class _Screen6State extends State<DetailsScreen> {
                               height: 46,
                               width: 161,
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black),
-                                borderRadius: const BorderRadius.all(Radius.circular(10))
-                              ),
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(10))),
                               child: Align(
                                   alignment: Alignment.center,
                                   child: const Text('Select Date')),
@@ -343,8 +340,8 @@ class _Screen6State extends State<DetailsScreen> {
                               width: 161,
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black),
-                                  borderRadius: const BorderRadius.all(Radius.circular(10))
-                              ),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(10))),
                               child: Align(
                                   alignment: Alignment.center,
                                   child: const Text('Select Time')),
@@ -356,24 +353,26 @@ class _Screen6State extends State<DetailsScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
-              height: 46,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Color(0xff78A408),
-                borderRadius: BorderRadius.all(Radius.circular(10))
+                height: 46,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    color: Color(0xff78A408),
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Book Now',
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16,
+                        color: Colors.white),
+                  ),
+                ),
               ),
-              child: Align(
-                alignment: Alignment.center,
-                child: Text('Book Now',
-                style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16,
-                  color: Colors.white
-                ),),
-              ),
-            ),
             ],
           ),
         ),
