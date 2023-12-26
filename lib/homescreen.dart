@@ -128,7 +128,7 @@ class _Screen4State extends State<Screen4> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image(image: AssetImage('assets/images/Rectangle 412.png')),
+                const Image(image: AssetImage('assets/images/Rectangle 412.png')),
                 Row(
                   children: [
                     Container(
@@ -323,7 +323,7 @@ class _Screen4State extends State<Screen4> {
                     const SizedBox(
                       height: 8,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Padding(
                       padding: const EdgeInsets.only(right: 10, top: 8),
                       child: Container(
@@ -374,7 +374,7 @@ class _Screen4State extends State<Screen4> {
               height: 50,
               width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  borderRadius: const BorderRadius.all(Radius.circular(10)),
                   color: Colors.white,
                   boxShadow: const [
                     BoxShadow(
@@ -402,16 +402,16 @@ class _Screen4State extends State<Screen4> {
                   ),
                   Expanded(
                     child: Container(
-                      child: Icon(Icons.event_outlined),
+                      child: const Icon(Icons.event_outlined),
                     ),
                   ),
                   Expanded(
                       child: Container(
-                    child: Icon(Icons.sports_cricket_outlined),
+                    child: const Icon(Icons.sports_cricket_outlined),
                   )),
                   Expanded(
                       child: Container(
-                    child: Icon(Icons.person_outline),
+                    child: const Icon(Icons.person_outline),
                   )),
                 ],
               ),

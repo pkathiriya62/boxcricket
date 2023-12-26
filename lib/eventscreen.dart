@@ -13,7 +13,7 @@ class _Screen9State extends State<Screen9> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back),
+        leading: const Icon(Icons.arrow_back),
         titleSpacing: 100,
         title: Text(
           'EVENTS',
@@ -22,7 +22,7 @@ class _Screen9State extends State<Screen9> {
             fontWeight: FontWeight.w600,
           ),
         ),
-        actions: [
+        actions: const [
           Icon(Icons.filter_alt_outlined),
           SizedBox(
             width: 10,
@@ -30,10 +30,9 @@ class _Screen9State extends State<Screen9> {
         ],
       ),
       body: Stack(
-
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8),
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Column(
@@ -46,7 +45,7 @@ class _Screen9State extends State<Screen9> {
                         prefixIconColor: Colors.black,
                         suffixIcon: Icon(Icons.keyboard_voice_outlined),
                         suffixIconColor: Colors.black,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(10),
                           ),
@@ -69,13 +68,13 @@ class _Screen9State extends State<Screen9> {
                           style: GoogleFonts.poppins(
                               fontWeight: FontWeight.w700, fontSize: 15),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text(
                           'See All',
                           style: GoogleFonts.poppins(
                             fontSize: 15,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xff707070),
+                            color: const Color(0xff707070),
                           ),
                         ),
                       ],
@@ -97,7 +96,8 @@ class _Screen9State extends State<Screen9> {
                           width: double.infinity,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/Rectangle 1088.png'),
+                              image: AssetImage(
+                                  'assets/images/Rectangle 1088.png'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -117,7 +117,10 @@ class _Screen9State extends State<Screen9> {
                               ),
                               Row(
                                 children: [
-                                  Icon(Icons.location_on_outlined,color: Colors.white,),
+                                  const Icon(
+                                    Icons.location_on_outlined,
+                                    color: Colors.white,
+                                  ),
                                   Text(
                                     'Capital Cricket Club, Mota Varachha',
                                     style: GoogleFonts.poppins(
@@ -147,11 +150,11 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -168,7 +171,7 @@ class _Screen9State extends State<Screen9> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -181,15 +184,16 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Padding(
-                                padding: const EdgeInsets.only(right: 10.0, top: 40),
+                                padding:
+                                    const EdgeInsets.only(right: 10.0, top: 40),
                                 child: Container(
                                   height: 26,
                                   width: 30,
@@ -199,7 +203,7 @@ class _Screen9State extends State<Screen9> {
                                       Radius.circular(5),
                                     ),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_forward_ios_outlined,
                                     color: Colors.white,
                                     size: 20,
@@ -212,7 +216,9 @@ class _Screen9State extends State<Screen9> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(
+                    height: 20,
+                  ),
                   Container(
                     height: 270,
                     width: double.infinity,
@@ -229,7 +235,8 @@ class _Screen9State extends State<Screen9> {
                           width: double.infinity,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/Rectangle 1088.png'),
+                              image: AssetImage(
+                                  'assets/images/Rectangle 1088.png'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -249,7 +256,10 @@ class _Screen9State extends State<Screen9> {
                               ),
                               Row(
                                 children: [
-                                  Icon(Icons.location_on_outlined,color: Colors.white,),
+                                  const Icon(
+                                    Icons.location_on_outlined,
+                                    color: Colors.white,
+                                  ),
                                   Text(
                                     'Cricket Zone, Dumas Road',
                                     style: GoogleFonts.poppins(
@@ -279,11 +289,11 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -300,7 +310,7 @@ class _Screen9State extends State<Screen9> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -313,15 +323,16 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Padding(
-                                padding: const EdgeInsets.only(right: 10.0, top: 40),
+                                padding:
+                                    const EdgeInsets.only(right: 10.0, top: 40),
                                 child: Container(
                                   height: 26,
                                   width: 30,
@@ -331,7 +342,7 @@ class _Screen9State extends State<Screen9> {
                                       Radius.circular(5),
                                     ),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_forward_ios_outlined,
                                     color: Colors.white,
                                     size: 20,
@@ -344,7 +355,9 @@ class _Screen9State extends State<Screen9> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(
+                    height: 20,
+                  ),
                   Container(
                     height: 270,
                     width: double.infinity,
@@ -361,7 +374,8 @@ class _Screen9State extends State<Screen9> {
                           width: double.infinity,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/Rectangle 1088.png'),
+                              image: AssetImage(
+                                  'assets/images/Rectangle 1088.png'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -381,7 +395,10 @@ class _Screen9State extends State<Screen9> {
                               ),
                               Row(
                                 children: [
-                                  Icon(Icons.location_on_outlined,color: Colors.white,),
+                                  const Icon(
+                                    Icons.location_on_outlined,
+                                    color: Colors.white,
+                                  ),
                                   Text(
                                     'Capital Cricket Club, Mota Varachha',
                                     style: GoogleFonts.poppins(
@@ -411,11 +428,11 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -432,7 +449,7 @@ class _Screen9State extends State<Screen9> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -445,15 +462,16 @@ class _Screen9State extends State<Screen9> {
                                         style: GoogleFonts.poppins(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
-                                            color: Color(0xff707070)),
+                                            color: const Color(0xff707070)),
                                       )
                                     ],
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Padding(
-                                padding: const EdgeInsets.only(right: 10.0, top: 40),
+                                padding:
+                                    const EdgeInsets.only(right: 10.0, top: 40),
                                 child: Container(
                                   height: 26,
                                   width: 30,
@@ -463,7 +481,7 @@ class _Screen9State extends State<Screen9> {
                                       Radius.circular(5),
                                     ),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_forward_ios_outlined,
                                     color: Colors.white,
                                     size: 20,
@@ -481,7 +499,7 @@ class _Screen9State extends State<Screen9> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -490,16 +508,16 @@ class _Screen9State extends State<Screen9> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.all(
+                      borderRadius: const BorderRadius.all(
                         Radius.circular(10),
                       ),
                       boxShadow: [
                         BoxShadow(
-                            offset: Offset(1, 1),
+                            offset: const Offset(1, 1),
                             blurRadius: 1,
                             color: Colors.grey.shade400),
                         BoxShadow(
-                            offset: Offset(-1, -1),
+                            offset: const Offset(-1, -1),
                             blurRadius: 1,
                             color: Colors.grey.shade400),
                       ]),
@@ -507,29 +525,29 @@ class _Screen9State extends State<Screen9> {
                     children: [
                       Expanded(
                         child: Container(
-
-
-                          child: Icon(
+                          child: const Icon(
                             Icons.home_outlined,
-
                           ),
                         ),
                       ),
                       Expanded(
                           child: Container(
-                            height: 37,
-                            width: 37,
-                            decoration: BoxDecoration(
-                                color: Color(0xff78A408), shape: BoxShape.circle),
-                            child: Icon(Icons.event_outlined,  color: Colors.white,),
-                          )),
+                        height: 37,
+                        width: 37,
+                        decoration: const BoxDecoration(
+                            color: Color(0xff78A408), shape: BoxShape.circle),
+                        child: const Icon(
+                          Icons.event_outlined,
+                          color: Colors.white,
+                        ),
+                      )),
                       Expanded(
                           child: Container(
-                            child: Icon(Icons.sports_cricket_outlined),
-                          )),
+                        child: const Icon(Icons.sports_cricket_outlined),
+                      )),
                       Expanded(
                         child: Container(
-                          child: Icon(Icons.person_outline),
+                          child: const Icon(Icons.person_outline),
                         ),
                       ),
                     ],

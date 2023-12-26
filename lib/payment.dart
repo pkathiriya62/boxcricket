@@ -32,6 +32,7 @@ class Screen6 extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, top: 8, bottom: 8),
         child: Column(
           children: [
+            // ignore: avoid_unnecessary_containers
             Container(
               child: const Center(
                 child: Image(
@@ -74,12 +75,21 @@ class Screen6 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  height: 70,
+                  width: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                    border: Border.all(),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Image(
                       image: AssetImage('assets/images/pngwing 2.png'),
                     ),
                   ),
+                ),
+                Container(
                   height: 70,
                   width: 70,
                   decoration: BoxDecoration(
@@ -87,14 +97,14 @@ class Screen6 extends StatelessWidget {
                     shape: BoxShape.circle,
                     border: Border.all(),
                   ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Image(
                       image: AssetImage('assets/images/pngwing 3.png'),
                     ),
                   ),
+                ),
+                Container(
                   height: 70,
                   width: 70,
                   decoration: BoxDecoration(
@@ -102,32 +112,23 @@ class Screen6 extends StatelessWidget {
                     shape: BoxShape.circle,
                     border: Border.all(),
                   ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Image(
                       image: AssetImage('assets/images/pngwing 4.png'),
                     ),
                   ),
-                  height: 70,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    shape: BoxShape.circle,
-                    border: Border.all(),
-                  ),
                 ),
                 Container(
-                  child: Icon(
-                    Icons.add,
-                    size: 40,
-                  ),
                   height: 70,
                   width: 70,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(),
+                  ),
+                  child: const Icon(
+                    Icons.add,
+                    size: 40,
                   ),
                 ),
               ],
@@ -148,6 +149,7 @@ class Screen6 extends StatelessWidget {
                 const SizedBox(
                   height: 9,
                 ),
+                // ignore: sized_box_for_whitespace
                 Container(
                   height: 52,
                   child: TextField(
@@ -161,7 +163,7 @@ class Screen6 extends StatelessWidget {
                 const SizedBox(
                   height: 9,
                 ),
-                Text(
+                const Text(
                   'Card Number',
                   style: TextStyle(
                     fontSize: 22,
@@ -171,6 +173,7 @@ class Screen6 extends StatelessWidget {
                 const SizedBox(
                   height: 9,
                 ),
+                // ignore: sized_box_for_whitespace
                 Container(
                   height: 52,
                   child: TextField(
@@ -189,7 +192,7 @@ class Screen6 extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Expiry Date',
                           style: TextStyle(
                             fontSize: 22,
@@ -199,6 +202,7 @@ class Screen6 extends StatelessWidget {
                         const SizedBox(
                           height: 9,
                         ),
+                        // ignore: sized_box_for_whitespace
                         Container(
                           height: 52,
                           width: 175,
@@ -218,7 +222,7 @@ class Screen6 extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Cvv',
                           style: TextStyle(
                             fontSize: 22,
@@ -228,6 +232,7 @@ class Screen6 extends StatelessWidget {
                         const SizedBox(
                           height: 9,
                         ),
+                        // ignore: sized_box_for_whitespace
                         Container(
                           height: 52,
                           width: 175,
@@ -275,7 +280,7 @@ class Screen6 extends StatelessWidget {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color(0xff78A408),
+                        color: const Color(0xff78A408),
                       ),
                       child: TextButton(
                         onPressed: () {},

@@ -12,9 +12,9 @@ class _Screen5State extends State<Screen5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back),
+        leading: const Icon(Icons.arrow_back),
         titleSpacing: 100,
-        title: Text(
+        title: const Text(
           'DISCOVER',
           style: TextStyle(
               fontSize: 20,
@@ -27,7 +27,7 @@ class _Screen5State extends State<Screen5> {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             TextField(
@@ -48,11 +48,11 @@ class _Screen5State extends State<Screen5> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                 children: [
                   Row(
@@ -81,7 +81,7 @@ class _Screen5State extends State<Screen5> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 19,
             ),
             Column(
@@ -93,7 +93,7 @@ class _Screen5State extends State<Screen5> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                       border: Border.all(color: Colors.black)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -117,7 +117,7 @@ class _Screen5State extends State<Screen5> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
@@ -127,7 +127,7 @@ class _Screen5State extends State<Screen5> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                       border: Border.all(color: Colors.black)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -151,7 +151,7 @@ class _Screen5State extends State<Screen5> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
@@ -161,7 +161,7 @@ class _Screen5State extends State<Screen5> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                       border: Border.all(color: Colors.black)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -185,7 +185,7 @@ class _Screen5State extends State<Screen5> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
@@ -195,7 +195,7 @@ class _Screen5State extends State<Screen5> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                       border: Border.all(color: Colors.black)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -219,7 +219,7 @@ class _Screen5State extends State<Screen5> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
@@ -229,7 +229,7 @@ class _Screen5State extends State<Screen5> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                       border: Border.all(color: Colors.black)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,

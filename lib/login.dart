@@ -32,10 +32,10 @@ class Screen3 extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
-                Row(
+                const Row(
                   children: [
                     SizedBox(
                       width: 20,
@@ -54,18 +54,18 @@ class Screen3 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Your Full Name',
                       style:
                           TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     TextField(
@@ -79,15 +79,15 @@ class Screen3 extends StatelessWidget {
                         // ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Text(
+                    const Text(
                       'Mobile Number',
                       style:
                           TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     TextField(
@@ -103,11 +103,17 @@ class Screen3 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
-                  child: Center(
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Color(0xff78A408),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Center(
                     child: Text(
                       'Sign In',
                       style: TextStyle(
@@ -116,12 +122,6 @@ class Screen3 extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                  ),
-                  height: 50,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Color(0xff78A408),
-                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ],

@@ -318,9 +318,9 @@ class _Screen6State extends State<DetailsScreen> {
                                   border: Border.all(color: Colors.black),
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(10))),
-                              child: Align(
+                              child: const Align(
                                   alignment: Alignment.center,
-                                  child: const Text('Select Date')),
+                                  child: Text('Select Date')),
                             ),
                           ),
                         ],
@@ -342,9 +342,9 @@ class _Screen6State extends State<DetailsScreen> {
                                   border: Border.all(color: Colors.black),
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(10))),
-                              child: Align(
+                              child: const Align(
                                   alignment: Alignment.center,
-                                  child: const Text('Select Time')),
+                                  child: Text('Select Time')),
                             ),
                           ),
                         ],
@@ -353,13 +353,13 @@ class _Screen6State extends State<DetailsScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
                 height: 46,
                 width: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Color(0xff78A408),
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Align(

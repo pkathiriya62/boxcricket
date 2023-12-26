@@ -38,7 +38,7 @@ class _Screen10State extends State<Screen10> {
                 fontSize: 16,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Padding(
@@ -51,14 +51,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -68,7 +68,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -77,14 +77,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -94,7 +94,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -103,14 +103,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -120,7 +120,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -129,14 +129,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -149,8 +149,8 @@ class _Screen10State extends State<Screen10> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 6.0),
               child: Divider(
                 color: Colors.black,
                 thickness: 1.5,
@@ -165,7 +165,7 @@ class _Screen10State extends State<Screen10> {
             ),
             Slider(
                 thumbColor: Colors.white,
-                activeColor: Color(0xff78A408),
+                activeColor: const Color(0xff78A408),
                 value: newvalue,
                 onChanged: (dynamic value) {
                   setState(() {
@@ -179,20 +179,20 @@ class _Screen10State extends State<Screen10> {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Container(
               height: 46,
               width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(
+                  borderRadius: const BorderRadius.all(
                     Radius.circular(10),
                   ),
                   border: Border.all(color: Colors.black)),
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Text(
@@ -200,18 +200,18 @@ class _Screen10State extends State<Screen10> {
                     style: GoogleFonts.poppins(
                         fontWeight: FontWeight.w700,
                         fontSize: 16,
-                        color: Color(0xff707070)),
+                        color: const Color(0xff707070)),
                   ),
-                  Spacer(),
-                  Icon(Icons.calendar_month_outlined),
-                  SizedBox(
+                  const Spacer(),
+                  const Icon(Icons.calendar_month_outlined),
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 6.0),
               child: Divider(
                 color: Colors.black,
                 thickness: 1.5,
@@ -228,21 +228,21 @@ class _Screen10State extends State<Screen10> {
               padding: const EdgeInsets.symmetric(horizontal: 11.0),
               child: Column(
                 children: [
-                  SizedBox(height: 15,),
+                  const SizedBox(height: 15,),
                   Row(
                     children: [
                       Container(
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -252,7 +252,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -261,14 +261,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -278,7 +278,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -287,14 +287,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -304,7 +304,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -313,14 +313,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -330,7 +330,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -339,14 +339,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -356,7 +356,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -365,14 +365,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -382,7 +382,7 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -391,14 +391,14 @@ class _Screen10State extends State<Screen10> {
                         height: 19,
                         width: 19,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(4),
                             ),
                             border: Border.all(
                               color: Colors.black,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
@@ -408,18 +408,18 @@ class _Screen10State extends State<Screen10> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
 
                 ],
               ),
             ),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
             Container(
               height: 46,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Color(0xff78A408),
                   borderRadius: BorderRadius.all(Radius.circular(10))
               ),

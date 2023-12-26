@@ -7,8 +7,8 @@ class Screen7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 20),
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 20),
           child: Icon(
             Icons.arrow_back,
             size: 30,
@@ -18,31 +18,32 @@ class Screen7 extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
+            // ignore: avoid_unnecessary_containers
             Container(
-              child: Icon(
+              child: const Icon(
                 Icons.check_circle_outline_rounded,
                 size: 220,
                 color: Color(0xff78A408),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text(
+            const Text(
               'Your Payment Was Successful !',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Padding(
-              padding: const EdgeInsets.only(
+            const Padding(
+              padding: EdgeInsets.only(
                 left: 50,
                 right: 50,
               ),
