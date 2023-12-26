@@ -128,7 +128,8 @@ class _Screen4State extends State<Screen4> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Image(image: AssetImage('assets/images/Rectangle 412.png')),
+                const Image(
+                    image: AssetImage('assets/images/Rectangle 412.png')),
                 Row(
                   children: [
                     Container(

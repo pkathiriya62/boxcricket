@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class TestMatch extends StatelessWidget {
@@ -40,10 +39,9 @@ class TestMatch extends StatelessWidget {
                     Stack(
                       children: [
                         SizedBox(
-                         
                           height: 180,
                           width: 367,
-                           child: Image(
+                          child: Image(
                             image:
                                 AssetImage('assets/images/Rectangle 1088.png'),
                             fit: BoxFit.cover,

@@ -228,7 +228,9 @@ class _Screen10State extends State<Screen10> {
               padding: const EdgeInsets.symmetric(horizontal: 11.0),
               child: Column(
                 children: [
-                  const SizedBox(height: 15,),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   Row(
                     children: [
                       Container(
@@ -411,26 +413,26 @@ class _Screen10State extends State<Screen10> {
                   const SizedBox(
                     height: 10,
                   ),
-
                 ],
               ),
             ),
-            const SizedBox(height: 50,),
+            const SizedBox(
+              height: 50,
+            ),
             Container(
               height: 46,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Color(0xff78A408),
-                  borderRadius: BorderRadius.all(Radius.circular(10))
-              ),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               child: Align(
                 alignment: Alignment.center,
-                child: Text('APPLY',
+                child: Text(
+                  'APPLY',
                   style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w700,
                       fontSize: 16,
-                      color: Colors.white
-                  ),
+                      color: Colors.white),
                 ),
               ),
             )
