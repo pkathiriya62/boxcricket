@@ -27,6 +27,7 @@ class ConfirmationScreen extends StatelessWidget {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
+              // ignore: avoid_unnecessary_containers
               child: Container(
                 child: const Image(
                   image:

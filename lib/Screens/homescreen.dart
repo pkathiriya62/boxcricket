@@ -132,6 +132,7 @@ class _Screen4State extends State<Screen4> {
                     image: AssetImage('assets/images/Rectangle 412.png')),
                 Row(
                   children: [
+                    // ignore: avoid_unnecessary_containers
                     Container(
                       child: const Row(
                         children: [
@@ -402,15 +403,18 @@ class _Screen4State extends State<Screen4> {
                     ),
                   ),
                   Expanded(
+                    // ignore: avoid_unnecessary_containers
                     child: Container(
                       child: const Icon(Icons.event_outlined),
                     ),
                   ),
                   Expanded(
+                      // ignore: avoid_unnecessary_containers
                       child: Container(
                     child: const Icon(Icons.sports_cricket_outlined),
                   )),
                   Expanded(
+                      // ignore: avoid_unnecessary_containers
                       child: Container(
                     child: const Icon(Icons.person_outline),
                   )),

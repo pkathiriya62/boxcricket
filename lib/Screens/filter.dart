@@ -13,6 +13,7 @@ class _Screen10State extends State<Screen10> {
 
   double newvalue = 0.5;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
