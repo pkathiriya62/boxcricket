@@ -1,4 +1,6 @@
-import 'package:boxcricket2/Screens/4days.dart';
+import 'package:boxcricket2/Screens/logo.dart';
+import 'package:boxcricket2/Screens/homescreen.dart';
+import 'package:boxcricket2/Screens/onboading.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +19,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const TestMatch(),
+      initialRoute: '/',
+      routes: {
+        '/':(context) => Logoscreen(),
+        '/homescreen':(context) => Screen4(),
+        '/onboading':(context)=>Screen2(),
+      },
     );
   }
 }

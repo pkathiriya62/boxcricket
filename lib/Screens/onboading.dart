@@ -8,6 +8,7 @@ class Screen2 extends StatefulWidget {
 }
 
 class _Screen2State extends State<Screen2> {
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,27 +91,32 @@ class _Screen2State extends State<Screen2> {
           const SizedBox(
             height: 40,
           ),
-          Container(
-            height: 46,
-            width: 335,
-            decoration: const BoxDecoration(
-              color: Color(0xff78A408),
-              borderRadius: BorderRadius.all(
-                Radius.circular(8),
+          InkWell(
+            onTap: () {
+              Navigator.pushNamed(context,'/homescreen');
+            },
+            child: Container(
+              height: 46,
+              width: 335,
+              decoration: const BoxDecoration(
+                color: Color(0xff78A408),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(8),
+                ),
               ),
-            ),
-            child: const Padding(
-              padding: EdgeInsets.only(
-                top: 5,
-              ),
-              child: Center(
-                child: Text(
-                  'NEXT',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'assets/fonts/Poppins-Regular.ttf',
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700,
+              child: const Padding(
+                padding: EdgeInsets.only(
+                  top: 5,
+                ),
+                child: Center(
+                  child: Text(
+                    'NEXT',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'assets/fonts/Poppins-Regular.ttf',
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ),
               ),
