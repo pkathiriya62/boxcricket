@@ -7,11 +7,16 @@ class Screen7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
+        leading: Padding(
           padding: EdgeInsets.only(left: 20),
-          child: Icon(
-            Icons.arrow_back,
-            size: 30,
+          child: InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.arrow_back,
+              size: 30,
+            ),
           ),
         ),
       ),

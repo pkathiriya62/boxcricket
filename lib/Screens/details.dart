@@ -19,7 +19,9 @@ class _Screen6State extends State<DetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
+        leading:  InkWell(onTap: () {
+              Navigator.pop(context);
+            },child: Icon(Icons.arrow_back)),
         titleSpacing: 100,
         title: Text(
           'DETAILS',
@@ -356,20 +358,25 @@ class _Screen6State extends State<DetailsScreen> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                height: 46,
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                    color: Color(0xff78A408),
-                    borderRadius: BorderRadius.all(Radius.circular(10))),
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Text(
-                    'Book Now',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16,
-                        color: Colors.white),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context,'/payment');
+                },
+                child: Container(
+                  height: 46,
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                      color: Color(0xff78A408),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Book Now',
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16,
+                          color: Colors.white),
+                    ),
                   ),
                 ),
               ),

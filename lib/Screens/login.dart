@@ -106,20 +106,25 @@ class Screen3 extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  height: 50,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Color(0xff78A408),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const Center(
-                    child: Text(
-                      'Sign In',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 25,
-                        color: Colors.white,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/homescreen');
+                  },
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Color(0xff78A408),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Sign In',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),

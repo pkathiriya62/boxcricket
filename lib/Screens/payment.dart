@@ -8,13 +8,18 @@ class Screen6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
+        leading: Padding(
           padding: EdgeInsets.only(
             left: 20,
           ),
-          child: Icon(
-            Icons.arrow_back,
-            size: 30,
+          child: InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.arrow_back,
+              size: 30,
+            ),
           ),
         ),
         title: const Padding(
@@ -275,21 +280,25 @@ class Screen6 extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Container(
-                      height: 50,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: const Color(0xff78A408),
-                      ),
-                      child: TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'PAY NOW',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
+                    InkWell(
+                      child: Container(
+                        height: 50,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: const Color(0xff78A408),
+                        ),
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/success');
+                          },
+                          child: const Text(
+                            'PAY NOW',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
                         ),
                       ),

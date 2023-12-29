@@ -93,7 +93,7 @@ class _Screen2State extends State<Screen2> {
           ),
           InkWell(
             onTap: () {
-              Navigator.pushNamed(context,'/homescreen');
+              Navigator.pushNamed(context,'/login');
             },
             child: Container(
               height: 46,

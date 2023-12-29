@@ -60,21 +60,27 @@ class _Screen4State extends State<Screen4> {
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Column(
               children: [
-                TextField(
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.search),
-                    prefixIconColor: Colors.black,
-                    suffixIconColor: Colors.black,
-                    suffixIcon: const Icon(Icons.keyboard_voice_outlined),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    hintText: 'Search',
-                    hintStyle: const TextStyle(
-                      fontFamily: 'assets/font/Poppins-Regular.ttf',
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context,'/discoverscreen');
+                  },
+                  child: TextField(
+                    enabled: false,
+                    decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.search),
+                      prefixIconColor: Colors.black,
+                      suffixIconColor: Colors.black,
+                      suffixIcon: const Icon(Icons.keyboard_voice_outlined),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      hintText: 'Search',
+                      hintStyle: const TextStyle(
+                        fontFamily: 'assets/font/Poppins-Regular.ttf',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ),
@@ -116,114 +122,119 @@ class _Screen4State extends State<Screen4> {
           const SizedBox(
             height: 15,
           ),
-          Container(
-            width: 335,
-            height: 211,
-            decoration: BoxDecoration(
-              borderRadius: const BorderRadius.all(
-                Radius.circular(10),
+          InkWell(
+            onTap: (){
+                        Navigator.pushNamed(context, '/detail');
+                      },
+            child: Container(
+              width: 335,
+              height: 211,
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10),
+                ),
+                border: Border.all(color: Colors.black),
               ),
-              border: Border.all(color: Colors.black),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Image(
-                    image: AssetImage('assets/images/Rectangle 412.png')),
-                Row(
-                  children: [
-                    // ignore: avoid_unnecessary_containers
-                    Container(
-                      child: const Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Color(0xff20AC2A),
-                            size: 12,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Color(0xff20AC2A),
-                            size: 12,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Color(0xff20AC2A),
-                            size: 12,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Color(0xff20AC2A),
-                            size: 12,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Color(0xffB5CFE1),
-                            size: 12,
-                          ),
-                          Text(
-                            'Good',
-                            style: TextStyle(
-                              fontFamily: 'assets/font/Poppins-Regular.ttf',
-                              fontWeight: FontWeight.w700,
-                              fontSize: 10,
-                              color: Colors.black,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Image(
+                      image: AssetImage('assets/images/Rectangle 412.png')),
+                  Row(
+                    children: [
+                      // ignore: avoid_unnecessary_containers
+                      Container(
+                        child: const Row(
+                          children: [
+                            Icon(
+                              Icons.star,
+                              color: Color(0xff20AC2A),
+                              size: 12,
                             ),
-                          ),
-                          Text(
-                            '62,778 Rating',
-                            style: TextStyle(
+                            Icon(
+                              Icons.star,
+                              color: Color(0xff20AC2A),
+                              size: 12,
+                            ),
+                            Icon(
+                              Icons.star,
+                              color: Color(0xff20AC2A),
+                              size: 12,
+                            ),
+                            Icon(
+                              Icons.star,
+                              color: Color(0xff20AC2A),
+                              size: 12,
+                            ),
+                            Icon(
+                              Icons.star,
+                              color: Color(0xffB5CFE1),
+                              size: 12,
+                            ),
+                            Text(
+                              'Good',
+                              style: TextStyle(
                                 fontFamily: 'assets/font/Poppins-Regular.ttf',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 10,
-                                color: Color(0xffB5CFE1)),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 8,
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10, top: 9),
-                      child: Container(
-                        height: 24,
-                        width: 63,
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(6)),
-                            color: Color(0xff78A408)),
-                        child: const Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            'Rs.15000',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 10,
-                                color: Colors.white),
-                          ),
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              '62,778 Rating',
+                              style: TextStyle(
+                                  fontFamily: 'assets/font/Poppins-Regular.ttf',
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 10,
+                                  color: Color(0xffB5CFE1)),
+                            ),
+                          ],
                         ),
                       ),
-                    )
-                  ],
-                ),
-                const Row(
-                  children: [
-                    Icon(
-                      Icons.location_on_outlined,
-                      color: Color(0xff78A408),
-                    ),
-                    Text(
-                      'Capital Cricket Club , Mota Varachha',
-                      style: TextStyle(
-                        fontFamily: 'assets/font/Poppins-Regular.ttf',
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
+                      const SizedBox(
+                        height: 8,
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 10, top: 9),
+                        child: Container(
+                          height: 24,
+                          width: 63,
+                          decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              color: Color(0xff78A408)),
+                          child: const Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Rs.15000',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 10,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  const Row(
+                    children: [
+                      Icon(
+                        Icons.location_on_outlined,
+                        color: Color(0xff78A408),
+                      ),
+                      Text(
+                        'Capital Cricket Club , Mota Varachha',
+                        style: TextStyle(
+                          fontFamily: 'assets/font/Poppins-Regular.ttf',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
           const SizedBox(

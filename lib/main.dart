@@ -1,6 +1,11 @@
+import 'package:boxcricket2/Screens/details.dart';
+import 'package:boxcricket2/Screens/discover.dart';
+import 'package:boxcricket2/Screens/login.dart';
 import 'package:boxcricket2/Screens/logo.dart';
 import 'package:boxcricket2/Screens/homescreen.dart';
 import 'package:boxcricket2/Screens/onboading.dart';
+import 'package:boxcricket2/Screens/payment.dart';
+import 'package:boxcricket2/Screens/paysuccess.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,9 +26,14 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/':(context) => Logoscreen(),
-        '/homescreen':(context) => Screen4(),
-        '/onboading':(context)=>Screen2(),
+        '/': (context) => const Logoscreen(),
+        '/homescreen': (context) => const Screen4(),
+        '/onboading': (context) => const Screen2(),
+        '/login': (context) => const Screen3(),
+        '/discoverscreen': (context) => const Screen5(),
+        '/detail': (context) => const DetailsScreen(),
+        '/payment': (context) => const Screen6(),
+        '/success': (context) => const Screen7(),
       },
     );
   }
