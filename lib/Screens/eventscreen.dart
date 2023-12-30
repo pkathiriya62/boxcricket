@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -41,9 +43,9 @@ class _Screen9State extends State<Screen9> {
                     height: 46,
                     child: TextField(
                       decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.search),
+                        prefixIcon: const Icon(Icons.search),
                         prefixIconColor: Colors.black,
-                        suffixIcon: Icon(Icons.keyboard_voice_outlined),
+                        suffixIcon: const Icon(Icons.keyboard_voice_outlined),
                         suffixIconColor: Colors.black,
                         border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
@@ -524,6 +526,7 @@ class _Screen9State extends State<Screen9> {
                   child: Row(
                     children: [
                       Expanded(
+                        // ignore: avoid_unnecessary_containers
                         child: Container(
                           child: const Icon(
                             Icons.home_outlined,
@@ -546,6 +549,7 @@ class _Screen9State extends State<Screen9> {
                         child: const Icon(Icons.sports_cricket_outlined),
                       )),
                       Expanded(
+                        // ignore: avoid_unnecessary_containers
                         child: Container(
                           child: const Icon(Icons.person_outline),
                         ),

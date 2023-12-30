@@ -114,7 +114,7 @@ class Screen3 extends StatelessWidget {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xff78A408),
+                      color: const Color(0xff78A408),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Center(

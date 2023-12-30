@@ -21,7 +21,7 @@ class _Screen6State extends State<DetailsScreen> {
       appBar: AppBar(
         leading:  InkWell(onTap: () {
               Navigator.pop(context);
-            },child: Icon(Icons.arrow_back)),
+            },child: const Icon(Icons.arrow_back)),
         titleSpacing: 100,
         title: Text(
           'DETAILS',
