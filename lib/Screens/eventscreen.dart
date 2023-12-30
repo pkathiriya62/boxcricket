@@ -526,7 +526,6 @@ class _Screen9State extends State<Screen9> {
                   child: Row(
                     children: [
                       Expanded(
-                        
                         child: Container(
                           child: const Icon(
                             Icons.home_outlined,
@@ -549,7 +548,6 @@ class _Screen9State extends State<Screen9> {
                         child: const Icon(Icons.sports_cricket_outlined),
                       )),
                       Expanded(
-                        
                         child: Container(
                           child: const Icon(Icons.person_outline),
                         ),
