@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_unnecessary_containers
 
+import 'package:boxcricket2/utils/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -199,8 +200,8 @@ class _Screen9State extends State<Screen9> {
                                 child: Container(
                                   height: 26,
                                   width: 30,
-                                  decoration: const BoxDecoration(
-                                    color: Color(0xff78A408),
+                                  decoration: BoxDecoration(
+                                    color: AppColor.primarycolor,
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(5),
                                     ),

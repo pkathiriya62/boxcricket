@@ -1,3 +1,5 @@
+import 'package:boxcricket2/utils/common/app_colors.dart';
+import 'package:boxcricket2/utils/common/app_images.dart';
 import 'package:flutter/material.dart';
 
 class Screen4 extends StatefulWidget {
@@ -19,8 +21,8 @@ class _Screen4State extends State<Screen4> {
           Container(
             height: 49,
             width: double.infinity,
-            decoration: const BoxDecoration(
-              color: Color(0xff78A408),
+            decoration: BoxDecoration(
+              color: AppColor.primarycolor,
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -29,10 +31,10 @@ class _Screen4State extends State<Screen4> {
                   Container(
                     height: 58,
                     width: 47,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage('assets/images/Mask group (1).png'),
+                        image: AssetImage(Appimages.homepageappbar),
                       ),
                     ),
                   ),
@@ -62,7 +64,7 @@ class _Screen4State extends State<Screen4> {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context,'/discoverscreen');
+                    Navigator.pushNamed(context, '/discoverscreen');
                   },
                   child: TextField(
                     enabled: false,
@@ -123,9 +125,9 @@ class _Screen4State extends State<Screen4> {
             height: 15,
           ),
           InkWell(
-            onTap: (){
-                        Navigator.pushNamed(context, '/detail');
-                      },
+            onTap: () {
+              Navigator.pushNamed(context, '/detail');
+            },
             child: Container(
               width: 335,
               height: 211,
@@ -201,7 +203,8 @@ class _Screen4State extends State<Screen4> {
                           height: 24,
                           width: 63,
                           decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(6)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(6)),
                               color: Color(0xff78A408)),
                           child: const Align(
                             alignment: Alignment.center,
