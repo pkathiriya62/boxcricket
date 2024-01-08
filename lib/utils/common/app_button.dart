@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class Appbutton extends StatelessWidget {
   final VoidCallback onTap;
-  Appbutton({super.key, required this.onTap});
+  const Appbutton({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,11 @@ class Appbutton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          GlobalText(
-            color: Colors.black,
-            fontFamily: 'Poppins',
-            text: Apptext.seeall,
-          ),
+            GlobalText(
+              color: Colors.black,
+              fontFamily: 'Poppins',
+              text: Apptext.seeall,
+            ),
           ],
         ),
       ),
